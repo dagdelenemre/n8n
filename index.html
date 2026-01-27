@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domates Seramız</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tomato: '#DC143C',
+                        darkgreen: '#228B22',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-darkgreen text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center">Domates Seramız</h1>
+            <nav class="flex justify-center gap-8 mt-4">
+                <a href="#teknoloji" class="hover:text-tomato transition">Sera Teknolojimiz</a>
+                <a href="#urunler" class="hover:text-tomato transition">Ürün Çeşitlerimiz</a>
+                <a href="#iletisim" class="hover:text-tomato transition">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="bg-gradient-to-r from-darkgreen to-green-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold mb-4">Taze, Doğal, Lezzetli</h2>
+            <p class="text-xl mb-8">Modern sera teknolojisi ile yetiştirilen kaliteli domatesler</p>
+            <a href="#urunler" class="bg-tomato hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition">Ürünlerimizi Keşfedin</a>
+        </div>
+    </section>
+
+    <section id="teknoloji" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-darkgreen mb-12">Sera Teknolojimiz</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-green-50 p-6 rounded-lg shadow-md border-t-4 border-darkgreen">
+                    <h3 class="text-2xl font-bold text-tomato mb-4">İklim Kontrolü</h3>
+                    <p class="text-gray-700">Otomatik sıcaklık ve nem kontrolü ile her mevsim ideal büyüme koşulları sağlıyoruz.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-md border-t-4 border-darkgreen">
+                    <h3 class="text-2xl font-bold text-tomato mb-4">Hidroponik Sistem</h3>
+                    <p class="text-gray-700">Toprak kullanmadan, besin değeri yüksek domatesler yetiştiriyoruz.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-md border-t-4 border-darkgreen">
+                    <h3 class="text-2xl font-bold text-tomato mb-4">Organik Üretim</h3>
+                    <p class="text-gray-700">Kimyasal ilaç kullanmadan, doğal yöntemlerle zararlılarla mücadele ediyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="urunler" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-darkgreen mb-12">Ürün Çeşitlerimiz</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="h-64 bg-gradient-to-br from-tomato to-red-600 flex items-center justify-center">
+                        <span class="text-white text-8xl"></span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-tomato mb-3">Salkım Domates</h3>
+                        <p class="text-gray-700 mb-4">Dalında olgunlaşan, aroması yüksek salkım domateslerimiz sofralarınıza lezzet katıyor.</p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="h-64 bg-gradient-to-br from-tomato to-red-600 flex items-center justify-center">
+                        <span class="text-white text-6xl"></span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-tomato mb-3">Cherry Domates</h3>
+                        <p class="text-gray-700 mb-4">Küçük, tatlı ve sulu cherry domateslerimiz salațalarınızın vazgeçilmezi.</p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="h-64 bg-gradient-to-br from-tomato to-red-600 flex items-center justify-center">
+                        <span class="text-white text-7xl"></span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-tomato mb-3">Kokteyl Domates</h3>
+                        <p class="text-gray-700 mb-4">Orta boy, dengeli lezzeti ile hem salata hem de yemeklerde kullanılabilir.</p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="py-16 bg-darkgreen text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">İletişim</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block mb-2 font-semibold">Adınız Soyadınız</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-tomato" placeholder="Adınız Soyadınız">
+                    </div>
+                    <div>
+                        <label class="block mb-2 font-semibold">E-posta</label>
+                        <input type="email" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-tomato" placeholder="ornek@email.com">
+                    </div>
+                    <div>
+                        <label class="block mb-2 font-semibold">Telefon</label>
+                        <input type="tel" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-tomato" placeholder="0555 555 55 55">
+                    </div>
+                    <div>
+                        <label class="block mb-2 font-semibold">Mesajınız</label>
+                        <textarea rows="5" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-tomato" placeholder="Mesajınızı yazın..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-tomato hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition">Gönder</button>
+                </form>
+                <div class="mt-12 text-center space-y-2">
+                    <p class="text-lg"> Adres: Sera Bölgesi, Antalya, Türkiye</p>
+                    <p class="text-lg"> Telefon: +90 555 123 45 67</p>
+                    <p class="text-lg"> E-posta: info@domatesseramiz.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p> 2024 Domates Seramız. Tüm hakları saklıdır.</p>
+            <p class="mt-2 text-gray-400">Doğanın tadını sofralarınıza taşıyoruz </p>
+        </div>
+    </footer>
+</body>
+</html>
