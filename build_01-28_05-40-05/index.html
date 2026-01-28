@@ -1,0 +1,79 @@
+```html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-chart-line"></i> Fintech Dashboard</h1>
+        </header>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Toplam Bakiye</h3>
+                    <p id="totalBalance">0.00 ₺</p>
+                </div>
+            </div>
+            
+            <div class="stat-card success">
+                <div class="stat-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Başarılı</h3>
+                    <p id="successCount">0</p>
+                </div>
+            </div>
+            
+            <div class="stat-card failed">
+                <div class="stat-icon">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Başarısız</h3>
+                    <p id="failedCount">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="paymentModule" class="payment-module">
+            <h2><i class="fas fa-credit-card"></i> Ödeme Al</h2>
+            <div class="payment-form">
+                <input type="number" id="amount" placeholder="Tutar (₺)" min="0" step="0.01">
+                <input type="text" id="cardNumber" placeholder="Kart Numarası" maxlength="19">
+                <button id="processPayment"><i class="fas fa-paper-plane"></i> İşlemi Başlat</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h2><i class="fas fa-list"></i> İşlem Geçmişi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tutar</th>
+                        <th>Kart</th>
+                        <th>Durum</th>
+                        <th>Tarih</th>
+                    </tr>
+                </thead>
+                <tbody id="trxTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script type="module" src="app.js"></script>
+</body>
+</html>
+```
